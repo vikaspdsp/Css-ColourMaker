@@ -3,40 +3,56 @@ h1 {
 }
 
 .container {
-  background-color: rgb(255, 255, 255);
-  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .marker {
+  display: flex;
   width: 25%;
+  padding: 1%;
   height: 40px;
   margin: 10px auto;
-  display: flex;
+}
+
+.marker div {
+  padding: 1%;
+  color: transparent;
+  box-shadow: 0px 0px 30px black;
 }
 
 .cap {
   width: 25%;
-  height: 40px;
+  background-image: linear-gradient(rgba(255, 0, 0,1), rgba(255, 0, 0,0.5), rgba(255, 0, 0,1));
 }
 
 .sleeve {
   width: 62.5%;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-left: 10px double rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(rgba(255, 0, 0,0.6), rgba(255, 0, 0,0.2), rgba(255, 0, 0,0.6));
+  border-left: 10px double rgba(0, 0, 0,1);
 }
 
-.red {
-  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+.red .cap {
+  background-image: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
 }
 
-.green {
-  background: linear-gradient(#55680D, #71F53E, #116C31);
-  box-shadow: 0 0 20px 0 #3B7E20CC;
+.red .sleeve {
+  background-image: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
 }
 
-.blue {
-  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-  box-shadow: 0 0 20px 0 blue;
+.green .cap {
+  background-image: linear-gradient(#55680D, #71F53E, #116C31);
+}
+
+.green .sleeve {
+  background-image: linear-gradient(#55680D, #71F53E, #116C31);
+}
+
+.blue .cap {
+  background-image: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+}
+
+.blue .sleeve {
+  background-image: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
