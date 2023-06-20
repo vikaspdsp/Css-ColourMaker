@@ -1,60 +1,45 @@
-.container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.marker{
-    display: flex;
-    width: 25%;
-    padding: 1%;
-    height: 40px;
-    
-
-}
-.marker div{
-    padding: 1%;
-    color: transparent;
-    box-shadow: 0px 0px 30px black;
-}
-.d1_red{
-    width: 25%;
-    background-image: linear-gradient(rgba(255, 0, 0,1),rgba(255, 0, 0,0.5),rgba(255, 0, 0,1));
-}
-.d2_red{
-    width: 62.5%;
-    background-image: linear-gradient(rgba(255, 0, 0,0.6),rgba(255, 0, 0,0.2),rgba(255, 0, 0,0.6));
-    
-    border-left: 10px double rgba(0, 0, 0,1) ;
-}
-.d3_red{
-    width: 12.5;
-    background-image: linear-gradient(rgba(255, 0, 0,1),rgba(255, 0, 0,0.5),rgba(255, 0, 0,1));
-}
-.d1_green{
-    width: 25%;
-    background-image: linear-gradient(rgb(60, 206, 2,1),rgb(72, 255, 0,0.5),rgb(72, 255, 0,1));
-}
-.d2_green{
-    width: 62.5%;
-    background-image: linear-gradient(rgb(60, 206, 2,0.6),rgb(72, 255, 0,0.2),rgb(72, 255, 0,0.6)); 
-    border-left: 10px double rgba(0, 0, 0,1) ;
-}
-.d3_green{
-    width: 12.5;
-    background-image: linear-gradient(rgb(60, 206, 2,1),rgb(72, 255, 0,0.5),rgb(72, 255, 0,1));
-}
-.d1_blue{
-    width: 25%;
-    background-image: linear-gradient(rgba(31, 4, 150,1),rgba(31, 4, 150,0.5),rgba(31, 4, 150,1));
-}
-.d2_blue{
-    width: 62.5%;
-    background-image: linear-gradient(rgba(31, 4, 150,0.6),rgba(31, 4, 150,0.2),rgba(31, 4, 150,0.6));
-    
-    border-left: 10px double rgba(0, 0, 0,1) ;
-}
-.d3_blue{
-    width: 12.5;
-    background-image: linear-gradient(rgba(31, 4, 150,1),rgba(31, 4, 150,0.5),rgba(31, 4, 150,1));
-}
+h1 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+  .cap {
+    width: 60px;
+    height: 25px;
+  }
+  
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+  }
+  
+  .cap, .sleeve {
+    display: inline-block;
+  }
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  }
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+  }
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
+  }
+  
